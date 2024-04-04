@@ -26,6 +26,10 @@ RUN INSTALL_PKGS="\
     bcc \
     bcc-tools \
     python3-bcc \
+    bcc \
+    bcc-tools \
+    python3-bcc \
+    bpftrace \
     " && \
     yum -y install --setopt=tsflags=nodocs --setopt=skip_missing_names_on_install=False $INSTALL_PKGS && \
     yum clean all && rm -rf /var/cache/*
